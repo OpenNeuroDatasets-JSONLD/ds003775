@@ -1,7 +1,27 @@
 {
 	"age": {
 		"Description": "age of participant",
-		"Units": "years"
+		"Units": "years",
+		"Annotations": {
+			"IsAbout": {
+				"TermURL": "nb:Age",
+				"Label": "Age"
+			},
+			"VariableType": "Continuous",
+			"Format": {
+				"TermURL": "nb:FromFloat",
+				"Label": "float"
+			},
+			"MissingValues": [
+				"n/a",
+				"N/A",
+				"na",
+				"NA",
+				"nan",
+				"NaN",
+				""
+			]
+		}
 	},
 	"cw_1": {
 		"Description": "Color-Word Interference Test 1 (naming)",
@@ -57,6 +77,24 @@
 		"Levels": {
 			"f": "female",
 			"m": "male"
+		},
+		"Annotations": {
+			"IsAbout": {
+				"TermURL": "nb:Sex",
+				"Label": "Sex"
+			},
+			"VariableType": "Categorical",
+			"Levels": {
+				"f": {
+					"TermURL": "snomed:248152002",
+					"Label": "Female"
+				},
+				"m": {
+					"TermURL": "snomed:248153007",
+					"Label": "Male"
+				}
+			},
+			"MissingValues": []
 		}
 	},
 	"tmt_2": {
@@ -79,5 +117,15 @@
 	},
 	"vf_3": {
 		"Description": "Verbal Fluency 3 (switching)"
+	},
+	"participant_id": {
+		"Description": "",
+		"Annotations": {
+			"IsAbout": {
+				"TermURL": "nb:ParticipantID",
+				"Label": "Participant ID"
+			},
+			"VariableType": "Identifier"
+		}
 	}
 }
